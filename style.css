@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+    align-items: center;
+    
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.nav-logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+
+}
+.nav-logo>a {
+    text-decoration: none;
+    color: coral;
+}
+
+.nav-links a{
+    padding:10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: .05rem;
+}
+
+.pets-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.pets {
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 8px black;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    border-radius: 1rem;
+}
+
+/* #title {
+    color: coral;
+    padding: 10px;
+    margin: 10px;
+} */
+
+#heading {
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media (max-width:400px) {
+    .pets-container {
+        flex-wrap: wrap;
+    }
+}
+
+
+.pets:hover {
+    box-shadow: 4px 4px 16px black;
+}
+
+.nav-links>a:hover {
+    color: black;
+}
+
+footer {
+    text-align: center;
+    height: 70px;
+    background-color: antiquewhite;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    line-height: 60px;
+}
+
+svg {
+    fill: black;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 250px;
+    z-index: 2;
+    box-shadow: 5px 10px #888888;
+    display: none;
+    flex-direction: column;
+    background-color: antiquewhite;
+    
+}
+
+.sidebar a {
+    text-decoration: none;
+    padding: 10px;
+    width: 100%;
+    color: black;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width:600px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
