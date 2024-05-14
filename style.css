@@ -132,3 +132,42 @@ svg {
         display: block;
     }
 }
+
+
+/* contact form style */
+
+.form-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 100px;
+    box-shadow: 2px 2px 10px black;
+    
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#contact-heading {
+    text-align: center;
+}
+
+input[type=submit]:hover {
+    background-color:  #45a049;
+}

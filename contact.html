@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="sidebar">
+                
+                  <a  href="#"><svg class="close" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+                    <a href="index.html">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="#">Blog</a>
+                 
+            </div>
+            <div class="nav-logo">
+                <a href="#">adoptme.com</a>
+            </div>
+            <div class="nav-links">
+                <a class="hideOnMobile" href="index.html">Home</a>
+                <a class="hideOnMobile" href="#">About Us</a>
+                <a class="hideOnMobile" href="contact.html">Contact</a>
+                <a class="hideOnMobile" href="#">Blog</a>
+                <a href="#"><svg class="menu-button" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </div>
+        </nav>
+    </header>
+    <div class="form-container">
+        <h1 id="contact-heading">Contact Form</h1>
+        <form action="/action">
+            
+            <label for="fname"><b>First Name :</b></label>
+            <input type="text" name="firstname" id="fname" placeholder="Enter First Name" required>
+    
+            <label for="lname"><b>Last Name :</b></label>
+            <input type="text" name="lastname" id="lname" placeholder="Enter Last Name" required>
+    
+            <label for="country"><b>Country</b></label>
+            <select name="country" id="country">
+                <option value="select-country">Select Your Country</option>
+                <option value="nepal">Nepal</option>
+                <option value="qatar">Qatar</option>
+                <option value="india">India</option>
+                <option value="sri lanka">Sri Lanka</option>
+                <option value="bangladesh">Bangaladesh</option>
+                <option value="autralia">Australia</option>
+                <option value="dubai">Dubai</option>
+                <option value="bahrain">Bahrain</option>
+            </select>
+    
+            <label for="subject"><b>Subject :</b></label>
+            <textarea name="subject" id="subject" placeholder="Write something" style="height: 200px;"></textarea>
+    
+            <input type="submit" value="submit">
+        </form>
+    </div>
+    <footer>
+        <h3>Alrights reserved @adoptme.com</h3>
+    </footer>
+</body>
+</html>
